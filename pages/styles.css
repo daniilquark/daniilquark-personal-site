@@ -31,6 +31,10 @@ main {
 	padding: 20px;
 }
 
+h1 {
+	color: white;
+}
+
 footer {
 	color: #fff;
 	text-align: center;

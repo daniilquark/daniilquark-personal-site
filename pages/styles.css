@@ -7,8 +7,11 @@ body {
 	padding: 5px;
 }
 
-.navigation > a > button {
+button {
 	font-family: Montserrat, sans-serif;
+}
+
+.navigation > button {
 	background-color: transparent;
 	color: white;
 	border: none;
@@ -20,7 +23,7 @@ body {
 	box-shadow: 17px 0px 17px rgba(0, 0, 0, 0.2);
 }
 
-.navigation > a > button:hover {
+.navigation > button:hover {
 	background-color: #555;
 }
 
@@ -48,13 +51,17 @@ a:hover {
 }
 
 .popup {
-	display: none;
-	position: fixed;
-	background-color: #333;
-	color: white;
-	padding: 20px;
-	border-radius: 15px;
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 17px 0px 17px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
 .popup button {
@@ -63,11 +70,12 @@ a:hover {
 	left: 50%;
 	border: none;
 	padding: 10px;
-	border-radius: 5px;
+	border-radius: 10px;
 	cursor: pointer;
 	display: block;
 	margin: 0 auto;
-	font-family: Montserrat, sans-serif;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	box-shadow: 17px 0px 17px rgba(0, 0, 0, 0.2);
 }
 
 .popup button:hover {

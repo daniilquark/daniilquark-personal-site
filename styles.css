@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+body {
+	font-family: Montserrat, sans-serif;
+	background-color: #333;
+}
+
+.status-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 3px;
+	width: 100%;
+	background-color: #A8E6CF;
+	transform: scaleX(0);
+	transform-origin: left;
+	animation: statusFill 25s linear infinite;
+	z-index: 1000;
+}
+
+.status-200 { background-color: #A8E6CF; }
+.status-404 { background-color: #FF8B94; }
+.status-500 { background-color: #FFD3B6; }
+
+
+@keyframes statusFill {
+	0% {
+	  transform: scaleX(0);
+	  transform-origin: left;
+	}
+  
+	50% {
+	  transform: scaleX(1);
+	  transform-origin: left;
+	}
+  
+	51% {
+	  transform: scaleX(1);
+	  transform-origin: right;
+	}
+  
+	100% {
+	  transform: scaleX(0);
+	  transform-origin: right;
+	}
+}

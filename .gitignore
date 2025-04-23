@@ -1,3 +1,6 @@
+# BASH
+*.swp
+
 # Logs
 logs
 *.log

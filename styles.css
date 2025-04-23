@@ -9,6 +9,7 @@
 body {
 	font-family: Montserrat, sans-serif;
 	background-color: #333;
+	color: white;
 }
 
 .status-bar {
@@ -79,8 +80,30 @@ body {
 	transition: opacity 0.3s ease;
 }
 
-@media (max-width: 300px) {
-	.site-title {
-		opacity: 0;
-	}
+.sections-wrapper {
+	justify-content: center;
+    gap: 5%;
+    display: flex;
+    padding: 5%;
+}
+
+.wrapper-card {
+	flex: 1;
+	padding: 2%;
+	background-color: #222;
+}
+
+.wrapper-card ul {
+	list-style: none;
+}
+
+.wrapper-card li {
+	padding: 2%;
+	margin: 2%;
+	background-color: #333;
+	text-align: center;
+}
+
+.wrapper-card h1 {
+	text-align: center;
 }
